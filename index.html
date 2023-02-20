@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon"       href="./img/cloudy.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container">
+      <a class="navbar-brand d-flex" href="#"><img class="w-100 h-100 pe-2" src="./img/logo.png" alt="">
+        <div class="logo-info">
+          <h6 class="fw-bold text-light">Weather</h6>
+          <h6 class="tagline">tagline goes here</h6>
+      </div>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link homeBtn p-2" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contactBtn p-2" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    </div>
+    <div class="searchInput container-fluid">
+       <div id="homeContainer" class="container p-5">
+        <div class="input-group mt-3 position-relative">
+            <input type="text" class="findInput form-control p-3 rounded-5 shadow" placeholder="Find your location..." aria-label="Text input with dropdown button">
+            <button class="btn searchBtn Clear rounded-5">Clear</button>
+          </div>
+
+          <div class="row weatherInfo rounded-4 m-3">
+            <div class="col-md-4 p-0 position-relative">
+                <div class="d-flex justify-content-between top p-2 mt-0 mb-1">
+                    <p class="today"></p>
+                    <p class="date"></p>
+                </div>
+                <div class="todayWeatherbox p-4">
+                    <h6 class="countryName pb-1 pt-0">--</h6>
+                    <div class="row align-items-center">
+                      <img class="img-fluid w-25 m-auto todaysIcon weathIcon" src=""  alt="">
+                        <h1 class="col-md-12 text-center"><span class="todaysDegree">0</span><sup>o</sup>C</h1>
+                    </div>
+                    <h6 class="weatherStatus">--</h6>
+                    <div class="weatherIcons d-flex justify-content-center">
+                        <div><i class="fa-solid fa-umbrella me-1 fs-6 text-white-50"></i><span class="me-4"><span class="rainChance">0</span>%</span></div>
+                        <div><i class="fa-solid fa-wind me-1 fs-6 text-white-50"></i><span class="me-4"><span class="airSpeed">0</span>km/h</span></div>
+                        <div><i class="fa-solid fa-location-dot me-1 fs-6 text-white-50"></i><span class="me-4 countrylocation">--</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-0 position-relative" style="background-color: #262936;">
+                <div class="text-center top p-2 mt-0 mb-1">
+                    <p class="tomorrow"></p>
+                </div>
+                <div class="todayWeatherbox p-4">
+                    <div class="row align-items-center">
+                        <img class="m-auto mt-4 mb-4 w-25 img-fluid tomorroIcon weathIcon" src="" alt="">
+                        <h4 class="text-center fw-bold text-white"><span class="tomorrowDegreeMax">0</span><sup>o</sup>C</h4>
+                        <h6 class="text-center fw-bold mb-2"><span class="tomorrowDegreeMin">0</span><sup>o</sup></h6>
+                    </div>
+                    <h6 class="weatherStatus tomorrowStatus">--</h6>
+                </div>
+            </div>
+            <div class="col-md-4 p-0 position-relative">
+                <div class="text-center top p-2 mt-0 mb-1">
+                    <p class="dayAfterTom"></p>
+                </div>
+                <div class="todayWeatherbox p-4">
+                    <div class="row align-items-center">
+                        <img class="m-auto mt-4 mb-4 w-25 img-fluid dayAfterTomorrowIcon weathIcon" src="" alt="">
+                        <h4 class="text-center fw-bold text-white"><span class="dayAfterTomorrowDegMax">0</span><sup>o</sup>C</h4>
+                        <h6 class="text-center fw-bold mb-2"><span class="dayAfterTomorrowDegMin">0</span><sup>o</sup></h6>
+                    </div>
+                    <h6 class="weatherStatus dayAfterTomorrowStatus">--</h6>
+                </div>
+            </div>
+          </div>
+       </div>
+    </div>
+    <footer class="fixed-bottom">
+        <div class="container p-5 pb-0">
+            <div class="row align-center">
+                <div class="col-md-8">
+                    <div class="input-group mt-2 mb-3">
+                        <input type="text" class="form-control p-3 rounded-5" placeholder="Enter you E-mail to Subscribe..." aria-label="Text input with dropdown button">
+                        <button class="btn searchBtn rounded-5 pe-4 ps-4">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="socialIcons col-md-4 d-flex justify-content-center">
+                  <a href="https://www.facebook.com/Omar.DarkSoul" target="_blank"><div class="icon position-relative me-2"><i class="fa-brands fa-facebook-f position-absolute start-50 top-50 translate-middle"></i></div></a> 
+                  <a href="#"><div class="icon position-relative me-2"><i class="fa-brands fa-twitter position-absolute start-50 top-50 translate-middle"></i></div></a> 
+                  <a href="#"><div class="icon position-relative me-2"><i class="fa-brands fa-google-plus-g position-absolute start-50 top-50 translate-middle"></i></div></a> 
+                  <a href="#"><div class="icon position-relative me-2"><i class="fa-brands fa-whatsapp position-absolute start-50 top-50 translate-middle"></i></div></a> 
+                </div>
+                <p class="mb-4 mt-4 ps-3 text-center">Copyright 2023 Company name. Designed by <a class="text-decoration-none text-white fw-bold" href="https://www.facebook.com/Omar.DarkSoul" target="_blank">Omar M. Abdelhamid.</a> All rights reserved</p>
+            </div>
+        </div>
+       </footer>
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
