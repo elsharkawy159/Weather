@@ -12,13 +12,7 @@ let todaysIcon = document.querySelector(".todaysIcon");
 let rainChance = document.querySelector(".rainChance");
 let airSpeed = document.querySelector(".airSpeed");
 let countrylocation = document.querySelector(".countrylocation");
-// Btn
-// let homeBtn = document.querySelector(".homeBtn")
-// let contactBtn = document.querySelector(".contactBtn")
-// let brand = document.querySelector(".navbar-brand")
-// homeBtn.onclick = ()=> window.open("../index.html", "_self")
-// brand.onclick = ()=> window.open("../index.html", "_self")
-// contactBtn.onclick = ()=> window.open("../contact.html", "_self")
+
 //tomorrow
 let tomorroIcon = document.querySelector(".tomorroIcon");
 let tomorrowDegreeMax = document.querySelector(".tomorrowDegreeMax");
